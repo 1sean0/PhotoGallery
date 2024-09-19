@@ -1,12 +1,21 @@
 # PhotoGallery
-An Android app built with Java/Kotlin and XML in Android Studio that fetches and displays images from Flickr. Users can search, view images in WebView, and enjoy dynamic browsing. Features polling for updates, notifications, and placeholder images. Optimized for Google Play store publishing. 
 
-Features:
-- Downloads and displays thumbnail images from Flickr.
-- Placeholder images populate the RecyclerView until Flickr images are fetched.
-- Allows users to search for images via a query in the search bar.
-- Implements toggleable polling for automatic image updates.
-- Sends notifications to alert users of new images or relevant events.
-- Users can tap on an image to view it in a WebView with a subtitle and a progress bar for an enhanced user experience.
+PhotoGallery is an Android application designed for publication on the Google Play Store. The app fetches and displays thumbnail images from Flickr, providing users with a seamless browsing experience.
 
-[Runs through Android Studio]
+## Features
+
+- **Image Fetching:** Utilizes Retrofit and Moshi for efficient network requests and JSON parsing, allowing for smooth retrieval of images from Flickr.
+
+- **Dynamic Image Loading:** Implements Coil for dynamic image loading in a RecyclerView, ensuring smooth caching and management of placeholder images.
+
+- **Asynchronous Operations:** Integrates Kotlin Coroutines to handle asynchronous image searches.
+
+- **Full-Sized Image Viewing:** Includes a WebView for displaying full-sized images with a progress bar to enhance user experience.
+
+- **Background Updates:** Utilizes WorkManager to implement a toggleable polling feature, enabling background updates and Notifications to alert users of new images.
+
+## Technologies Used
+
+- **Programming Languages:** Java, Kotlin
+- **Development Tools:** Android Studio
+- **Libraries:** Retrofit, Moshi, Coil, WorkManager
